@@ -1,4 +1,5 @@
 #include "ExampleSubsystem.h"
+#include "../Commands/ExampleCommand.h"
 #include "../RobotMap.h"
 
 ExampleSubsystem::ExampleSubsystem()
@@ -10,7 +11,7 @@ ExampleSubsystem::ExampleSubsystem()
 void ExampleSubsystem::InitDefaultCommand()
 {
 	// Set the default command for a subsystem here.
-	//SetDefaultCommand(new MySpecialCommand());
+	SetDefaultCommand(new ExampleCommand());
 }
 
 // Put methods for controlling this subsystem
